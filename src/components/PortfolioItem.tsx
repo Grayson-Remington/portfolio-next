@@ -1,6 +1,12 @@
 import React from "react";
-
-function PortfolioItem({ title, imgUrl, stack, link }) {
+import Image from "next/image";
+interface PortfolioItemProps {
+  title: string;
+  imgUrl: string;
+  stack: Array<string>;
+  link: string;
+}
+function PortfolioItem({ title, imgUrl, stack, link }: PortfolioItemProps) {
   return (
     <a
       href={link}
@@ -8,7 +14,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
       rel="noopener noreferrer"
       className="overflow-hidden rounded-md border-2 border-stone-900"
     >
-      <img
+      <Image
         src={imgUrl}
         alt="portfolio"
         className="h-36 w-full cursor-pointer object-cover md:h-48"
@@ -18,8 +24,11 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
           {title}
         </h3>
         <p className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs md:text-sm">
-          {stack.map((item) => (
-            <span className="inline-block rounded-md border-2 border-stone-900 px-2 py-1 font-semibold">
+          {stack.map((item, index) => (
+            <span
+              key={index}
+              className="inline-block rounded-md border-2 border-stone-900 px-2 py-1 font-semibold"
+            >
               {item}
             </span>
           ))}

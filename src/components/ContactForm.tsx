@@ -5,7 +5,7 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: MouseEvent) => {
     event.preventDefault();
     const response = await fetch("https://formspree.io/f/xdovzzdw", {
       method: "POST",
@@ -31,7 +31,7 @@ function ContactForm() {
     >
       <div className="flex items-center justify-center">
         <form
-          onSubmit={handleSubmit}
+          onSubmit={() => handleSubmit}
           className="flex w-full max-w-2xl flex-col items-center px-10 md:w-9/12"
         >
           <div className="mb-7 text-3xl">Contact Me</div>

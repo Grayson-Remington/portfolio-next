@@ -33,8 +33,9 @@ function Portfolio() {
         <div className="bg-transparent p-4 text-center text-3xl">Projects</div>
         <div className="js-show-on-scroll flex flex-col items-center justify-center pb-4 md:flex-row">
           <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-2">
-            {portfolio.map((project) => (
+            {portfolio.map((project, index) => (
               <PortfolioItem
+                key={index}
                 imgUrl={project.imgUrl}
                 title={project.title}
                 stack={project.stack}
