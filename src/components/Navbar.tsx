@@ -1,8 +1,13 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
-import { BsGithub } from "react-icons/bs";
+import {
+  BsGithub,
+  BsFillFilePdfFill,
+  BsFillFileEarmarkWordFill,
+} from "react-icons/bs";
 
+import Image from "next/image";
 function Navbar() {
   return (
     <div className="fixed z-10 flex h-16 w-full items-center justify-between border bg-slate-100 px-4">
@@ -14,6 +19,24 @@ function Navbar() {
 
       <div className="links flex gap-9">
         <div className="icons flex gap-3">
+          <div className="group/resume rounded-lg border border-black p-1">
+            Resume
+            <div className="group-hover/resume: invisible relative flex bg-white">
+              <a
+                className="hover:text-xl"
+                href="./assets/grayson_remington_resume.docx"
+              >
+                <BsFillFileEarmarkWordFill size={30} />
+              </a>
+              <a
+                className="hover:text-xl"
+                href="./assets/grayson_remington_resume.docx"
+              >
+                <BsFillFilePdfFill size={30} />
+              </a>
+            </div>
+          </div>
+
           <a
             className="hover:text-xl"
             href="mailto:graysonbremington@gmail.com"

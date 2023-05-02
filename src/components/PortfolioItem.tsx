@@ -14,7 +14,7 @@ function PortfolioItem({ title, imgUrl, stack, link }: PortfolioItemProps) {
       rel="noopener noreferrer"
       className="overflow-hidden rounded-md border-2 border-stone-900"
     >
-      <Image
+      <img
         src={imgUrl}
         alt="portfolio"
         className="h-36 w-full cursor-pointer object-cover md:h-48"
