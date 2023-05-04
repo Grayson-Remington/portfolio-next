@@ -3,32 +3,11 @@ import React, { useRef, useEffect, useState } from "react";
 import PortfolioItem from "./PortfolioItem";
 
 function Portfolio() {
-  const [isVisible, setIsVisible] = useState(false);
-  const divRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry!.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(divRef.current!);
-        }
-      },
-      { rootMargin: "0px" }
-    );
-    observer.observe(divRef.current!);
-
-    return () => {
-      observer.unobserve(divRef.current!);
-    };
-  }, []);
-
   return (
-    <div id="projects" className="pt-16" ref={divRef}>
+    <div id="projects" className="pt-16">
       <div
-        className={`my-div transition delay-150 duration-1000 ease-in-out ${
-          isVisible ? "translate-x-0" : "translate-x-full "
-        }`}
+        className="my-div 
+          "
       >
         <div className="bg-transparent p-4 text-center text-3xl">Projects</div>
         <div className="js-show-on-scroll flex flex-col items-center justify-center pb-4 md:flex-row">
@@ -77,3 +56,26 @@ const portfolio = [
 ];
 
 export default Portfolio;
+
+{
+  /* const [isVisible, setIsVisible] = useState(false);
+const divRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry!.isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(divRef.current!);
+      }
+    },
+    { rootMargin: "0px" }
+  );
+  observer.observe(divRef.current!);
+
+  return () => {
+    observer.unobserve(divRef.current!);
+  };
+}, []);
+*/
+}
