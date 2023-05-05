@@ -32,6 +32,7 @@ function Navbar() {
               <div className="resume-box absolute left-1/2 top-10 hidden   -translate-x-1/2  transform items-center rounded-lg border bg-white group-hover/resume:flex">
                 <a
                   className="m-1"
+                  target="_blank"
                   href="./assets/grayson_remington_resume.docx"
                 >
                   <BsFillFileEarmarkWordFill size={30} />
@@ -39,7 +40,8 @@ function Navbar() {
                 <div className="h-8 w-[0.5px] bg-black"></div>
                 <a
                   className="m-1"
-                  href="./assets/grayson_remington_resume.docx"
+                  target="_blank"
+                  href="./assets/grayson_remington_resume.pdf"
                 >
                   <BsFillFilePdfFill size={30} />
                 </a>
