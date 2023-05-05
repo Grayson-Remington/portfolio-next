@@ -14,18 +14,21 @@ function Navbar() {
   return (
     <>
       <div className="fixed z-50 flex h-16 w-full items-center justify-between border bg-slate-100 px-4">
-        <img
-          src="assets/profile_pic.jpg"
-          alt=""
-          className=" aspect-auto h-5/6 rounded-full "
-        />
-        <div className="links flex gap-9">
+        <div className="group/profile_pic relative aspect-auto h-5/6 rounded-full">
+          <img
+            src="assets/profile_pic.jpg"
+            alt=""
+            className="relative aspect-auto h-full rounded-full border-2 border-blue-950 group-hover/profile_pic:h-40"
+          />
+        </div>
+
+        <div className="links flex h-full gap-9">
           <div className="icons flex items-center gap-3">
-            <div className="group/resume relative flex h-full w-full items-center">
+            <div className="group/resume relative flex w-full items-center">
               <h1 className="w-full rounded-lg border border-black p-1">
                 Resume
               </h1>
-              <div className="hover-buffer relative hidden h-full w-full group-hover/resume:block"></div>
+              <div className="hover-buffer absolute left-1/2 top-6 hidden h-6 w-full -translate-x-1/2   transform  group-hover/resume:block"></div>
               <div className="resume-box absolute left-1/2 top-10 hidden   -translate-x-1/2  transform items-center rounded-lg border bg-white group-hover/resume:flex">
                 <a
                   className="m-1"
@@ -64,11 +67,19 @@ function Navbar() {
               <BsGithub size={30} />
             </a>
           </div>
-          <div className="bold hidden items-center gap-9 uppercase md:flex">
-            <a href="#intro">Intro</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contactform">Contact</a>
+          <div className="bold hidden h-full items-center gap-6 uppercase md:flex">
+            <a href="#intro" className="flex h-full w-full items-center">
+              Intro
+            </a>
+            <a href="#projects" className="flex h-full w-full items-center">
+              Projects
+            </a>
+            <a href="#experience" className="flex h-full w-full items-center">
+              Experience
+            </a>
+            <a href="#contactform" className="flex h-full w-full items-center">
+              Contact
+            </a>
           </div>
           <button
             className="inline-flex items-center justify-end md:hidden"

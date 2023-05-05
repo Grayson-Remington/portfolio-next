@@ -5,6 +5,7 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio() {
   return (
     <div id="projects" className="pt-16">
+      <div className="m-8 h-0.5 w-[90%] bg-black"></div>
       <div
         className="my-div 
           "
