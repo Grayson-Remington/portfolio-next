@@ -17,7 +17,7 @@ function PortfolioItem({ title, imgUrl, stack, link }: PortfolioItemProps) {
       <img
         src={imgUrl}
         alt="portfolio"
-        className="h-36 w-full cursor-pointer object-cover md:h-48"
+        className="h-36 w-full  cursor-pointer object-cover md:h-48 lg:h-64"
       />
       <div className="w-full bg-white p-4">
         <h3 className="mb-2 text-lg font-semibold md:mb-3 md:text-xl">

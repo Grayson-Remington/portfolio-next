@@ -1,18 +1,16 @@
 import React, { useRef, useEffect, useState } from "react";
 
 import PortfolioItem from "./PortfolioItem";
+import portfolio from "public/data/portfolio";
 
 function Portfolio() {
   return (
     <div id="projects" className="pt-16">
       <div className="m-8 h-0.5 w-[90%] bg-black"></div>
-      <div
-        className="my-div 
-          "
-      >
-        <div className="bg-transparent p-4 text-center text-3xl">Projects</div>
+      <div className="my-div">
+        <div className="bg-transparent p-4 text-center text-3xl">Projects:</div>
         <div className="js-show-on-scroll flex flex-col items-center justify-center pb-4 md:flex-row">
-          <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 p-4">
             {portfolio.map((project, index) => (
               <PortfolioItem
                 key={index}
@@ -28,33 +26,6 @@ function Portfolio() {
     </div>
   );
 }
-const portfolio = [
-  {
-    title: "Music Notes Generator",
-    imgUrl: "assets/music-note-generator.jpg",
-    stack: ["React", "Javascript", "CSS"],
-    link: "https://simple-music-generator.vercel.app/",
-  },
-  {
-    title: "Dead Drift Flycasters",
-    imgUrl: "assets/dead-drift-flycasters.jpg",
-    stack: ["React", "Javascript", "Tailwind"],
-    link: "https://grayson-remington.github.io/dead-drift-flycasters/",
-  },
-  {
-    title: "Weather App",
-    imgUrl: "assets/weather-app.jpg",
-    stack: ["NextJS", "Javascript", "Tailwind", "API"],
-    link: "https://weather-app-hazel-kappa.vercel.app/",
-  },
-
-  {
-    title: "Real Estate App",
-    imgUrl: "assets/real-estate-app.jpg",
-    stack: ["NextJS", "Javascript", "ChakraUI", "API"],
-    link: "https://real-estate-app-nine-kohl.vercel.app/",
-  },
-];
 
 export default Portfolio;
 

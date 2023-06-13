@@ -7,21 +7,21 @@ function Experience() {
       className="flex h-full flex-col items-center justify-between bg-transparent"
     >
       <div className="m-8 h-0.5 w-[90%] bg-black"></div>
-      <section className=" flex h-full w-full flex-col place-content-center items-center p-4 text-center">
+      <section className=" flex h-full w-full flex-col place-content-center items-center gap-2 p-4 text-center">
         <h1 className="text-3xl">Work Experience</h1>
         <div id="Engineer I" className="flex h-min w-full items-center">
           <div className="relative hidden h-full w-2/4 justify-center p-8 md:flex">
             <img
-              className=" aspect-auto  w-full max-w-xl rounded-full border-8 border-blue-950"
+              className=" aspect-auto w-full max-w-xl rounded-full border-8 border-blue-950"
               alt=""
               src="/assets/engineer.jpg"
             />
           </div>
           <div className="z-10 w-full">
-            <div className="flex items-center justify-center pb-4 text-center text-xl font-bold uppercase  underline">
-              <div className="relative flex h-full w-2/4 justify-center  p-8 md:hidden">
+            <div className="flex items-center justify-center gap-2 pb-4 text-center text-xl font-bold uppercase underline">
+              <div className="relative flex h-full w-2/4 justify-center md:hidden">
                 <img
-                  className=" aspect-auto  w-full max-w-xl rounded-full border-8 border-blue-950"
+                  className=" aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950"
                   alt=""
                   src="/assets/engineer.jpg"
                 />
@@ -54,9 +54,9 @@ function Experience() {
           <div className="z-10 w-full">
             <div className="flex items-center justify-center pb-4 text-center text-xl font-bold uppercase underline">
               <h1>Recreation Supervisor</h1>
-              <div className="relative flex h-full w-2/4 justify-center  p-8 md:hidden">
+              <div className="relative flex h-full w-2/4 justify-center   md:hidden">
                 <img
-                  className=" aspect-auto  w-full max-w-xl rounded-full border-8 border-blue-950"
+                  className="  aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950 sm:w-32"
                   alt=""
                   src="/assets/recreation-center.jpg"
                 />

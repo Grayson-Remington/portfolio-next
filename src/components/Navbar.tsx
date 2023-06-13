@@ -18,7 +18,7 @@ function Navbar() {
           <img
             src="assets/profile_pic.jpg"
             alt=""
-            className="relative aspect-auto h-full rounded-full border-2 border-blue-950 group-hover/profile_pic:h-40"
+            className="relative hidden aspect-auto h-full rounded-full border-2 border-blue-950 group-hover/profile_pic:h-40 sm:block"
           />
         </div>
 

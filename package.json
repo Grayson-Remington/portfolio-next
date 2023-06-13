@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.2",
     "@headlessui/react": "^1.7.14",
     "hamburger-react": "^2.5.0",
     "intersection-observer": "^0.12.2",
