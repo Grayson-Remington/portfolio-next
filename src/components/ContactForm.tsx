@@ -20,7 +20,7 @@ function ContactForm() {
     >
       <div className="flex items-center justify-center">
         <form
-          onSubmit={handleSubmit}
+          onSubmit={() => handleSubmit}
           className="flex w-full max-w-2xl flex-col items-center px-10 md:w-9/12"
         >
           <div className="mb-7 text-3xl">Contact Me</div>
