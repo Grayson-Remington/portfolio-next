@@ -7,7 +7,7 @@ function Experience() {
       className="flex h-full flex-col items-center justify-between bg-transparent"
     >
       <div className="m-8 h-0.5 w-[90%] bg-black"></div>
-      <section className=" flex h-full w-full flex-col place-content-center items-center gap-2 p-4 text-center">
+      <section className=" flex h-full w-full flex-col place-content-center items-center gap-2 p-20 text-center">
         <h1 className="text-3xl">Work Experience</h1>
         <div id="Engineer I" className="flex h-min w-full items-center">
           <div className="relative hidden h-full w-2/4 justify-center p-8 md:flex">

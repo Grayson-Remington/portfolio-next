@@ -2,7 +2,13 @@ export default [
   {
     title: "Distance Between",
     imgUrl: "assets/distance-between.jpg",
-    stack: ["NextJS", "Prisma", "CSS"],
+    stack: [
+      "NextJS",
+      "TypeScript",
+
+      "ChatGPT & Google Maps Integration",
+      "Database Integration",
+    ],
     link: "https://distance-between-next-database.vercel.app/",
   },
   {
