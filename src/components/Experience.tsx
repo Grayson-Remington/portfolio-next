@@ -18,7 +18,7 @@ function Experience() {
             />
           </div>
           <div className="z-10 w-full">
-            <div className="flex items-center justify-center gap-2 pb-4 text-center text-xl font-bold uppercase underline">
+            <div className="flex items-center justify-center gap-4 pb-4 text-center text-xl font-bold uppercase underline">
               <div className="relative flex h-full w-2/4 justify-center md:hidden">
                 <img
                   className=" aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950"
@@ -52,9 +52,9 @@ function Experience() {
         </div>
         <div id="Engineer I" className="flex h-min w-full items-center">
           <div className="z-10 w-full">
-            <div className="flex items-center justify-center pb-4 text-center text-xl font-bold uppercase underline">
+            <div className="flex items-center justify-center gap-4 pb-4 text-center text-xl font-bold uppercase underline">
               <h1>Recreation Supervisor</h1>
-              <div className="relative flex h-full w-2/4 justify-center   md:hidden">
+              <div className="relative flex h-full w-2/4 justify-center md:hidden">
                 <img
                   className="  aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950 sm:w-32"
                   alt=""
