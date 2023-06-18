@@ -8,13 +8,13 @@ export default [
   {
     title: "Music Notes Generator",
     imgUrl: "assets/music-note-generator.jpg",
-    stack: ["React", "Javascript", "CSS", "JQuery", "MIDI"],
+    stack: ["React", "Javascript", "CSS", "jQuery", "MIDI"],
     link: "https://simple-music-generator.vercel.app/",
   },
   {
     title: "Dead Drift Flycasters",
     imgUrl: "assets/dead-drift-flycasters.jpg",
-    stack: ["React", "Javascript", "Tailwind", "JQuery"],
-    link: "https://grayson-remington.github.io/dead-drift-flycasters/",
+    stack: ["NextJS", "Typescript", "Tailwind"],
+    link: "https://dead-drift-next.vercel.app/",
   },
 ];
