@@ -14,7 +14,7 @@ export default [
   {
     title: "Dead Drift Flycasters",
     imgUrl: "assets/dead-drift-flycasters.jpg",
-    stack: ["NextJS", "JavaScript", "Tailwind"],
+    stack: ["NextJS", "React", "JavaScript", "Tailwind"],
     link: "https://dead-drift-next.vercel.app/",
   },
 ];
