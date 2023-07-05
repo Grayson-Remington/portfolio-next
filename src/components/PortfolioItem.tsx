@@ -5,25 +5,27 @@ interface PortfolioItemProps {
   imgUrl: string;
   stack: Array<string>;
   link: string;
+  demo?: string;
 }
-function PortfolioItem({ title, imgUrl, stack, link }: PortfolioItemProps) {
+function PortfolioItem({
+  title,
+  imgUrl,
+  stack,
+  link,
+  demo,
+}: PortfolioItemProps) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="overflow-hidden rounded-md border-2 border-stone-900"
-    >
+    <div className="overflow-hidden rounded-md border-2 border-stone-900">
       <img
         src={imgUrl}
         alt="portfolio"
-        className="h-36 w-full  cursor-pointer object-cover md:h-48 lg:h-64"
+        className="h-36 w-full object-cover md:h-48 lg:h-64"
       />
-      <div className="w-full bg-white p-4">
+      <div className="flex w-full flex-col bg-white p-4">
         <h3 className="mb-2 text-lg font-semibold md:mb-3 md:text-xl">
           {title}
         </h3>
-        <p className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs md:text-sm">
+        <p className="mb-2 flex flex-row flex-wrap items-center justify-start gap-2 text-xs md:text-sm">
           {stack.map((item, index) => (
             <span
               key={index}
@@ -33,8 +35,28 @@ function PortfolioItem({ title, imgUrl, stack, link }: PortfolioItemProps) {
             </span>
           ))}
         </p>
+        <div className="flex gap-2 py-4">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-2 text-xs font-semibold text-blue-600 md:text-sm"
+          >
+            Website Link
+          </a>
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-2 text-xs font-semibold text-blue-600 md:text-sm"
+            >
+              Demo Video
+            </a>
+          )}
+        </div>
       </div>
-    </a>
+    </div>
   );
 }
 

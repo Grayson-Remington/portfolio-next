@@ -10,6 +10,7 @@ export default [
     imgUrl: "assets/music-note-generator.jpg",
     stack: ["React", "JavaScript", "CSS", "jQuery", "MIDI"],
     link: "https://simple-music-generator.vercel.app/",
+    demo: "https://www.youtube.com/watch?v=1JlKrGDWaC4&ab_channel=GraysonRemington",
   },
   {
     title: "Dead Drift Flycasters",
