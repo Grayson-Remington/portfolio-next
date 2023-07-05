@@ -16,11 +16,14 @@ function PortfolioItem({
 }: PortfolioItemProps) {
   return (
     <div className="overflow-hidden rounded-md border-2 border-stone-900">
-      <img
-        src={imgUrl}
-        alt="portfolio"
-        className="h-36 w-full object-cover md:h-48 lg:h-64"
-      />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={imgUrl}
+          alt="portfolio"
+          className="h-36 w-full object-cover md:h-48 lg:h-64"
+        />
+      </a>
+
       <div className="flex w-full flex-col bg-white p-4">
         <h3 className="mb-2 text-lg font-semibold md:mb-3 md:text-xl">
           {title}
