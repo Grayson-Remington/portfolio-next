@@ -56,7 +56,7 @@ function Navbar() {
             </a>
             <a
               className="hover:text-xl"
-              href="www.linkedin.com/in/grayson-remington-347427173"
+              href="https://www.linkedin.com/in/grayson-remington-347427173"
               target="blank"
             >
               <FaLinkedinIn size={30} />
