@@ -23,7 +23,7 @@ function ContactForm() {
           onSubmit={handleSubmit}
           className="flex w-full max-w-2xl flex-col items-center px-10 md:w-9/12"
         >
-          <div className="mb-7 text-3xl">Contact Me</div>
+          <div className="mb-8 text-4xl italic">Contact Me</div>
           <input
             className="w-full rounded-md border-2 p-2 focus:outline-none"
             id="name"
