@@ -11,6 +11,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import Link from "next/link";
 
 function Intro() {
   useEffect(() => {
@@ -69,14 +70,14 @@ function Intro() {
       <div className="grid w-full max-w-[1200px] place-items-center px-20">
         <h1 className="place-self-start pb-2 text-3xl">Who I am:</h1>
         <p className=" text-xl leading-10">
-          Hello! I'm Gray, a software engineer and web developer who is
+          Hello! I&apos;m Gray, a software engineer and web developer who is
           passionate about building websites and applications. I love using
           technology to solve real world problems and create more efficient
           systems. If you have an idea for a website or would like to work
           together, please get in
-          <a href="/#contactform" className="p-1 text-blue-500 underline">
+          <Link href="/#contactform" className="p-1 text-blue-500 underline">
             contact
-          </a>
+          </Link>
           with me!
         </p>
       </div>
