@@ -3,13 +3,8 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { useRouter } from "next/router";
-import {
-  SiAcademia,
-  SiInstapaper,
-  SiJavascript,
-  SiReact,
-  SiTypescript,
-} from "react-icons/si";
+import { SiPython, SiJavascript, SiReact, SiTypescript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import Link from "next/link";
 
@@ -56,12 +51,12 @@ function Intro() {
                 <h1>NextJS</h1>
               </div>
               <div className="opacity_transition flex flex-col items-center justify-center gap-2 opacity-0 transition-opacity delay-[2700ms] duration-[3000ms]">
-                <SiAcademia size={30} />
-                <h1>AutoCAD</h1>
+                <FaJava size={30} />
+                <h1>Java</h1>
               </div>
               <div className="opacity_transition flex flex-col items-center justify-center gap-2 opacity-0 transition-opacity delay-[3000ms] duration-[3000ms]">
-                <SiInstapaper size={30} />
-                <h1>Inventor</h1>
+                <SiPython size={30} />
+                <h1>Python</h1>
               </div>
             </div>
           </div>
