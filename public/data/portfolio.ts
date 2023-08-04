@@ -1,5 +1,12 @@
 export default [
   {
+    title: "To-do App",
+    imgUrl: "assets/to-do-app.jpg",
+    stack: ["NextJS", "TypeScript", "Tailwind", "Spring Boot", "MySQL"],
+    about: "A full stack to-do website built with all CRUD capabilities",
+    link: "https://todo-application-orcin.vercel.app/",
+  },
+  {
     title: "Distance Between",
     imgUrl: "assets/distance-between.jpg",
     stack: ["NextJS", "TypeScript", "Prisma", "TRPC", "ChatGPT", "Google Maps"],
