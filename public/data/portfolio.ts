@@ -3,8 +3,16 @@ export default [
     title: "To-do App",
     imgUrl: "assets/to-do-app.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "Spring Boot", "MySQL"],
-    about: "A full stack to-do website built with all CRUD capabilities",
+    about:
+      "A full stack to-do website built with CRUD capabilities and user authentication",
     link: "https://todo-application-orcin.vercel.app/",
+  },
+  {
+    title: "Ferr's Wares",
+    imgUrl: "assets/ferrs-wares.jpg",
+    stack: ["NextJS", "JavaScript", "Tailwind", "GraphQL", "Shopify CMS"],
+    about: "A frontend storefront built using Shopify CMS and GraphQL",
+    link: "https://www.ferrs-wares.com/",
   },
   {
     title: "Distance Between",
