@@ -61,7 +61,7 @@ function PortfolioItem({
               target="blank"
               rel="noopener noreferrer"
             >
-              <BsGithub className="aspect-square h-full w-full" />
+              <BsGithub />
             </a>
             {demo && (
               <a
