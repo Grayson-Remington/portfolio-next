@@ -62,7 +62,7 @@ function Intro() {
           </div>
         </div>
       </div>
-      <div className="grid w-full max-w-[1200px] place-items-center px-20">
+      <div className="grid w-full max-w-[1200px] place-items-center px-8 md:px-20">
         <h1 className="place-self-start pb-2 text-3xl">Who I am:</h1>
         <p className=" text-xl leading-10">
           Hello! I&apos;m Gray, a software engineer and web developer who is

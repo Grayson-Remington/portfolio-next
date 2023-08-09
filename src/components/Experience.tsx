@@ -6,7 +6,7 @@ function Experience() {
       id="experience"
       className="flex h-full flex-col items-center justify-between bg-transparent "
     >
-      <section className=" flex h-full w-full max-w-[1200px] flex-col place-content-center items-center gap-2 p-20 text-center">
+      <section className=" flex h-full w-full max-w-[1200px] flex-col place-content-center items-center gap-2 p-4 px-8 pt-20 text-center md:px-20">
         <h1 className="pb-8 text-4xl italic">Work Experience</h1>
         <div id="Engineer I" className="flex h-min w-full items-center">
           <div className="relative hidden h-full w-2/4 justify-center p-8 md:flex">

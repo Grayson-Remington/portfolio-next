@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { BsGithub } from "react-icons/bs";
 interface PortfolioItemProps {
   title: string;
   imgUrl: string;
@@ -7,6 +8,7 @@ interface PortfolioItemProps {
   link: string;
   about: string;
   demo?: string;
+  githubLink: string;
 }
 function PortfolioItem({
   title,
@@ -15,9 +17,10 @@ function PortfolioItem({
   link,
   about,
   demo,
+  githubLink,
 }: PortfolioItemProps) {
   return (
-    <div className="grid max-w-[1200px] place-items-center gap-2 p-4 px-20 md:grid-cols-2">
+    <div className="grid max-w-[1200px] place-items-center gap-2 p-4 px-8 md:grid-cols-2 md:px-20">
       <div className="">
         <h1 className="pb-2 text-4xl underline lg:pb-8">{title}</h1>
         <p className="pb-4 text-2xl">{about}</p>
@@ -43,21 +46,29 @@ function PortfolioItem({
               </span>
             ))}
           </p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-2 text-xs font-semibold text-blue-600 md:text-sm"
+              className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-1 text-center text-xs font-semibold text-blue-600 md:text-sm"
             >
               Website Link
+            </a>
+            <a
+              className="flex w-fit items-center rounded-md border-2 border-stone-900 p-1 text-blue-600"
+              href={githubLink}
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <BsGithub className="aspect-square h-full w-full" />
             </a>
             {demo && (
               <a
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-2 text-xs font-semibold text-blue-600 md:text-sm"
+                className="flex w-fit flex-row flex-wrap items-center justify-start gap-2 self-end rounded-md border-2 border-stone-900 p-1 text-center text-xs font-semibold text-blue-600 md:text-sm"
               >
                 Demo Video
               </a>
