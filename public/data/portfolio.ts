@@ -1,10 +1,19 @@
 export default [
   {
+    title: "Freshipes",
+    imgUrl: "assets/freshipes.jpg",
+    stack: ["NextJS", "TypeScript", "Tailwind", "Redux", "MongoDB"],
+    about:
+      "A full stack recipes website built with CRUD capabilities and user authentication designed to search and save recipes",
+    link: "https://freshipes-one.vercel.app/",
+    githubLink: "https://github.com/Grayson-Remington/freshipes",
+  },
+  {
     title: "To-do App",
     imgUrl: "assets/to-do-app.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "Spring Boot", "MySQL"],
     about:
-      "A full stack to-do website built with CRUD capabilities and user authentication",
+      "A full stack to-do website built with CRUD capabilities and user authentication designed to save and complete tasks",
     link: "https://todo-application-orcin.vercel.app/",
     githubLink: "https://github.com/Grayson-Remington/Todo-Application",
   },
