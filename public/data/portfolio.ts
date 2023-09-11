@@ -1,6 +1,6 @@
 export default [
   {
-    title: "Freshipes",
+    title: "Fresh-ipes",
     imgUrl: "assets/freshipes.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "Redux", "MongoDB"],
     about:
