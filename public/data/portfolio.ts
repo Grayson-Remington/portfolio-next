@@ -1,5 +1,13 @@
 export default [
   {
+    title: "Purple",
+    imgUrl: "assets/purple.jpg",
+    stack: ["NextJS", "TypeScript", "Tailwind", "Socket.io", "Framer Motion"],
+    about: "A Socket.io website to play the multiplayer card game purple",
+    link: "https://purplethegame.vercel.app/",
+    githubLink: "https://github.com/Grayson-Remington/purple",
+  },
+  {
     title: "Fresh-ipes",
     imgUrl: "assets/freshipes.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "Redux", "MongoDB"],
