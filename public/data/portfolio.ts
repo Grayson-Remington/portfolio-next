@@ -46,7 +46,7 @@ export default [
   {
     title: "Music Notes Generator",
     imgUrl: "assets/music-note-generator.jpg",
-    stack: ["React", "JavaScript", "CSS", "jQuery", "MIDI"],
+    stack: ["React", "JavaScript", "CSS", "MIDI"],
     link: "https://simple-music-generator.vercel.app/",
     about:
       "A piano learning website that generates random or patterned notes within a set range on the Treble and Bass Clef and has MIDI capabilities.",
