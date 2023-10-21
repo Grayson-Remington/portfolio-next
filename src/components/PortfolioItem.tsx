@@ -31,12 +31,12 @@ function PortfolioItem({
           <img
             src={imgUrl}
             alt="portfolio"
-            className="h-36 w-full object-cover md:h-48 lg:h-64"
+            className="h-full w-full object-cover"
           />
         </a>
 
         <div className="flex w-full flex-col bg-white p-4">
-          <p className="mb-2 flex flex-row flex-wrap items-center justify-start gap-2 text-xs md:text-sm">
+          <p className="mb-2 flex flex-row flex-wrap items-center justify-start gap-2 text-xs lg:text-sm">
             {stack.map((item, index) => (
               <span
                 key={index}
