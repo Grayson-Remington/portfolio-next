@@ -8,12 +8,57 @@ function Experience() {
     >
       <section className=" flex h-full w-full max-w-[1200px] flex-col place-content-center items-center gap-2 p-4 px-8 pt-20 text-center md:px-20">
         <h1 className="pb-8 text-4xl italic">Work Experience</h1>
-        <div id="Engineer I" className="flex h-min w-full items-center">
+        <div
+          id="Recreation Supervisor"
+          className="flex h-min w-full items-center"
+        >
+          <div className="z-10 w-full">
+            <div className="flex items-center justify-center gap-4 pb-4 text-center text-xl font-bold uppercase underline">
+              <h1>Dry Utility Engineer</h1>
+              <div className="relative flex h-full w-2/4 justify-center md:hidden">
+                <img
+                  className="  aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950 sm:w-32"
+                  alt=""
+                  src="/assets/engineer.jpg"
+                />
+              </div>
+            </div>
+
+            <ul className="list-inside list-disc  text-left text-lg font-medium ">
+              <li>
+                Engineered and designed dry utility systems within commercial
+                and mixed-use developments using a variety of tools including
+                AutoCAD Civil3D.
+              </li>
+              <li>
+                Coordinated relocations and new service installations with
+                power, gas, and telecommunication companies for new
+                developments.
+              </li>
+              <li>
+                Prepared and reviewed construction drawings for completeness
+                before final PE review.
+              </li>
+              <li>
+                Communicated and managed multiple projects simultaneously for
+                various clients.
+              </li>
+            </ul>
+          </div>
+          <div className="relative hidden h-full w-2/4 justify-center p-8 md:flex">
+            <img
+              className=" aspect-auto  w-full max-w-xl rounded-full border-8 border-blue-950"
+              alt=""
+              src="/assets/engineer.jpg"
+            />
+          </div>
+        </div>
+        <div id="Engineer I" className="flex h-min w-full items-center py-4">
           <div className="relative hidden h-full w-2/4 justify-center p-8 md:flex">
             <img
               className=" aspect-auto w-full max-w-xl rounded-full border-8 border-blue-950"
               alt=""
-              src="/assets/engineer.jpg"
+              src="/assets/electric_engineer.jpg"
             />
           </div>
           <div className="z-10 w-full">
@@ -22,7 +67,7 @@ function Experience() {
                 <img
                   className=" aspect-auto w-28 max-w-xl rounded-full border-8 border-blue-950"
                   alt=""
-                  src="/assets/engineer.jpg"
+                  src="/assets/electric_engineer.jpg"
                 />
               </div>
               <h1>Telecommunications Engineer</h1>
@@ -49,7 +94,10 @@ function Experience() {
             </ul>
           </div>
         </div>
-        <div id="Engineer I" className="flex h-min w-full items-center">
+        <div
+          id="Recreation Supervisor"
+          className="flex h-min w-full items-center"
+        >
           <div className="z-10 w-full">
             <div className="flex items-center justify-center gap-4 pb-4 text-center text-xl font-bold uppercase underline">
               <h1>Recreation Supervisor</h1>

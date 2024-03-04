@@ -1,5 +1,14 @@
 export default [
   {
+    title: "Dry Utilities Project Tracker",
+    imgUrl: "assets/duprojecttracker.jpg",
+    stack: ["NextJS", "TypeScript", "Tailwind", "MongoDB", "S3", "ESRI"],
+    about:
+      "A full stack project tracking website with CRUD capabilities, user authentication, and  S3 and ESRI integration",
+    link: "https://dryutilitiesva.com/",
+    githubLink: "https://github.com/Grayson-Remington/dry-utility-mongo",
+  },
+  {
     title: "Purple",
     imgUrl: "assets/purple.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "Socket.io", "Framer Motion"],
