@@ -10,7 +10,13 @@ function Portfolio() {
       className="flex h-full flex-col items-center justify-between bg-transparent pt-20"
     >
       <div className="pb-4 text-4xl italic">Projects</div>
-      <div className="js-show-on-scroll flex flex-col items-center justify-center pb-4 md:flex-row">
+      <div
+        className=" flex flex-col pb-4 md:flex-row md:justify-center [&::-webkit-scrollbar-thumb]:bg-gray-300
+  
+  [&::-webkit-scrollbar-track]:bg-gray-100
+ 
+  [&::-webkit-scrollbar]:w-2"
+      >
         <div className="grid grid-cols-1 gap-4">
           {portfolio.map((project, index) => (
             <PortfolioItem

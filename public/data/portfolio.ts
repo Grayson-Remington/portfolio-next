@@ -1,11 +1,20 @@
 export default [
   {
+    title: "Dry Utilities VA",
+    imgUrl: "assets/dryutilitiesva.jpg",
+    stack: ["React", "JavaScript", "Tailwind", "PostgreSQL", "ESRI"],
+    about:
+      "A full stack utility mapping website with CRUD capabilities and PostgreSQL and ESRI integration",
+    link: "https://dryutilitiesva.com/",
+    githubLink: "https://github.com/Grayson-Remington/utilityMapApp",
+  },
+  {
     title: "Dry Utilities Project Tracker",
     imgUrl: "assets/duprojecttracker.jpg",
     stack: ["NextJS", "TypeScript", "Tailwind", "MongoDB", "S3", "ESRI"],
     about:
-      "A full stack project tracking website with CRUD capabilities, user authentication, and  S3 and ESRI integration",
-    link: "https://dryutilitiesva.com/",
+      "A full stack project tracking website with CRUD capabilities, user authentication, and  S3 and Google Maps integration",
+    link: "https://dry-utility-mongo.vercel.app/",
     githubLink: "https://github.com/Grayson-Remington/dry-utility-mongo",
   },
   {
